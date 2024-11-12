@@ -11,3 +11,5 @@ RUN micromamba install -y -n base -f /tmp/env.yaml && \
 
 # Ensure PATH is set correctly for micromamba's installed Python
 ENV PATH="/opt/conda/bin:$PATH"
+
+COPY --chown=$MAMBA_USER:$MAMBA_USER ../src/ .
