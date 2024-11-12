@@ -1,5 +1,5 @@
 process ConvertTiff {
-    conda "${projectDir}/envs/env.yml"
+    container 'hwarden162/scema:latest'
     memory "8 GB"
     time "1 h"
     cpus 1
