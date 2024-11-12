@@ -1,8 +1,5 @@
 process ConvertTiff {
     container 'hwarden162/scema:latest'
-    withDocker { 
-        runOptions = '-v ${projectDir}/src:/src'
-    }
     memory "8 GB"
     time "1 h"
     cpus 1
